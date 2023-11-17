@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 unconventional_data = {}
 feature_names = []
 
+
 # Converter of column values into classes for use in
 # the algorithm model of the linear regression programme
 def classifier(col, data):
@@ -25,6 +26,7 @@ def xtractor_num(col, val):
 
 def xtractor_str(col, val):
     return list(filter(lambda x: x[1] == val, unconventional_data[col]))[0][0]
+
 
 # Column-based dataset filter by status
 def list_by_state(end_index, state, list_data, index, unconv):
@@ -62,6 +64,7 @@ def graph(data, i, bins, unconv):
 
     # Show the plot
     plt.show()
+
 
 # Function used to normalise and standardise the dates
 # in the datatset by converting them to the same format
